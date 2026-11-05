@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root{--paper:#f7f3ed;--ink:#191817;--muted:#77716b;--pink:#c22e70;--line:#e5ded5;--header-height:78px;--glass:rgba(255,255,255,.48)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:'DM Sans',sans-serif;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}img{max-width:100%}.wrap{width:min(1240px,88%);margin:auto}.top{width:100%;margin:0;height:var(--header-height);position:sticky;top:0;z-index:20;display:flex;align-items:center;justify-content:space-between;padding:0 6%;background:rgba(247,243,237,.86);border-bottom:1px solid rgba(226,219,211,.72);backdrop-filter:blur(18px) saturate(1.5);-webkit-backdrop-filter:blur(18px) saturate(1.5)}.brand{display:flex;align-items:center;gap:10px}.brand img{width:42px;height:42px;object-fit:cover;border-radius:50%;mix-blend-mode:multiply}.brand span{font:700 11px 'Manrope',sans-serif;letter-spacing:.12em;text-transform:uppercase}.nav{display:flex;align-items:center;gap:8px}.glass-button{position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:42px;padding:0 19px;border:1px solid rgba(255,255,255,.88);border-radius:28px;background:linear-gradient(145deg,rgba(255,255,255,.84),rgba(255,255,255,.38) 58%,rgba(244,238,233,.52));box-shadow:0 6px 18px rgba(53,43,38,.08),inset 0 1px 0 rgba(255,255,255,.98),inset 0 -1px 0 rgba(199,185,177,.18);backdrop-filter:blur(20px) saturate(1.6);-webkit-backdrop-filter:blur(20px) saturate(1.6);font-size:11px;font-weight:600;transition:transform .22s ease,background .22s ease,border-color .22s ease,box-shadow .22s ease}.glass-button:hover{transform:translateY(-2px);border-color:#fff;background:linear-gradient(145deg,rgba(255,255,255,.98),rgba(255,255,255,.64));box-shadow:0 9px 22px rgba(53,43,38,.13),inset 0 1px 0 #fff}.glass-button:active{transform:translateY(0) scale(.98)}.glass-button:focus-visible{outline:3px solid rgba(194,46,112,.36);outline-offset:3px}.glass-button b{font-size:15px;font-weight:400}.glass-button-dark{color:white;border-color:rgba(255,255,255,.76);background:linear-gradient(145deg,rgba(45,39,40,.9),rgba(25,23,23,.82));box-shadow:0 7px 20px rgba(25,24,23,.18),inset 0 1px 0 rgba(255,255,255,.24)}.glass-button-dark:hover{background:linear-gradient(145deg,rgba(194,46,112,.96),rgba(137,24,76,.9));box-shadow:0 10px 25px rgba(137,24,76,.25),inset 0 1px 0 rgba(255,255,255,.3)}.kicker{margin:0 0 12px;color:var(--pink);font-size:10px;letter-spacing:.23em;font-weight:700}.campaign-stage{height:calc(100svh - var(--header-height));min-height:440px;position:relative;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#d9b2c2}.campaign-image{display:block;width:100%;height:auto;max-height:calc(100svh - var(--header-height));object-fit:contain;transform:scale(1);will-change:transform}.scroll-cue{position:absolute;left:50%;bottom:22px;display:flex;align-items:center;gap:12px;padding:10px 15px;border:1px solid rgba(255,255,255,.72);border-radius:24px;background:rgba(255,255,255,.34);backdrop-filter:blur(16px);font-size:8px;font-weight:700;letter-spacing:.19em;color:#51243a;transform:translateX(-50%)}.scroll-cue span{font-size:15px;line-height:10px;animation:cue 1.4s ease-in-out infinite}@keyframes cue{50%{transform:translateY(4px)}}.collection-panel{position:relative;z-index:2;padding:76px 0 96px;background:var(--paper);border-radius:22px 22px 0 0;box-shadow:0 -18px 45px rgba(47,34,37,.06)}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:34px;padding-bottom:24px;border-bottom:1px solid var(--line)}.section-heading h1,.shop-hero h1,.about-hero h1{margin:0;font:500 clamp(38px,6vw,70px)/1.02 'Manrope',sans-serif;letter-spacing:-.07em}.section-note{max-width:320px;margin:0 0 4px;color:var(--muted);font-size:12px;line-height:1.7}.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;padding-top:28px}.product-card{min-width:0}.product-visual{height:380px;position:relative;display:grid;place-items:center;overflow:hidden;background:#eadfd4}.product-visual:has(.concept-label){text-decoration:none}.visual-rose{background:#e4d8d2}.visual-stone{background:#d8d2c7}.concept-label{position:absolute;z-index:2;left:14px;top:14px;padding:8px 10px;border:1px solid rgba(255,255,255,.76);background:rgba(255,255,255,.45);backdrop-filter:blur(12px);font-size:8px;letter-spacing:.13em}.garment{position:relative;width:52%;height:69%;filter:drop-shadow(0 15px 14px rgba(36,26,26,.13))}.tee{background:#bd2c6b;clip-path:polygon(30% 0,70% 0,100% 15%,86% 32%,76% 25%,80% 100%,20% 100%,24% 25%,14% 32%,0 15%)}.tee:before{content:'';position:absolute;top:0;left:37%;width:26%;height:12%;border:4px solid #e7c0c8;border-top:0;border-radius:0 0 50% 50%}.tee:after{content:'MFE';position:absolute;top:41%;left:37%;color:#f7e9dc;font:700 14px 'Manrope';letter-spacing:.15em}.hoodie{background:#252222;clip-path:polygon(32% 0,68% 0,100% 19%,85% 34%,78% 28%,82% 100%,18% 100%,22% 28%,15% 34%,0 19%)}.hoodie:before{content:'';position:absolute;top:0;left:31%;width:38%;height:18%;border:7px solid #5e5552;border-radius:48% 48% 20% 20%}.hoodie:after{content:'✳';position:absolute;top:44%;left:44%;color:#df4686;font-size:24px}.tank{width:45%;height:67%;background:#eee6d8;clip-path:polygon(23% 0,36% 0,42% 16%,58% 16%,64% 0,77% 0,88% 18%,100% 23%,84% 100%,16% 100%,0 23%,12% 18%);filter:drop-shadow(0 15px 14px rgba(36,26,26,.13))}.tank:after{content:'EXPRESS';position:absolute;top:48%;left:20%;font:700 10px 'Manrope';letter-spacing:.13em;color:#262120}.color-dot{position:absolute;right:14px;bottom:14px;width:15px;height:15px;border-radius:50%;background:var(--pink);border:2px solid #fff}.product-card:nth-child(2) .color-dot{background:#252222}.product-card:nth-child(3) .color-dot{background:#eee6d8}.product-meta{display:flex;justify-content:space-between;gap:12px;padding:14px 2px}.product-meta h2{margin:0 0 5px;font:600 14px 'Manrope'}.product-meta p{margin:0;color:var(--muted);font-size:10px}.product-meta>a,.product-index{font-size:17px}.center-link{display:flex;justify-content:center;margin-top:28px}.text-link{display:inline-flex;gap:18px;padding:14px 20px;border-bottom:1px solid #cdbec0;font-size:11px;font-weight:700}.home-about{padding:60px 0 80px;background:#e9ddd1}.home-about-inner{display:grid;grid-template-columns:1fr 1fr auto;align-items:center;gap:32px}.home-about h2,.shop-end h2{margin:0;font:500 clamp(38px,5.5vw,66px)/.98 'Manrope';letter-spacing:-.07em}.home-about h2 em,.shop-hero h1 em,.about-hero h1 em{color:var(--pink);font-style:normal}.home-about-inner>p{max-width:330px;color:#625a54;font-size:13px;line-height:1.8}.foot{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:23px 0 30px;border-top:1px solid var(--line);font-size:10px;color:var(--muted)}.foot .brand img{width:32px;height:32px}.about-hero{padding:110px 0 100px}.about-hero h1{font-size:clamp(54px,9vw,112px)}.about-hero>p:last-child{max-width:450px;margin:24px 0 0;color:var(--muted);font-size:16px;line-height:1.7}.about-story{padding:80px 0;background:#e9ddd1}.story-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:10%;align-items:center}.story-art{min-height:410px;display:grid;place-items:center;background:#fff;border-radius:4px 180px 4px 4px;overflow:hidden}.story-art img{width:95%;height:auto;mix-blend-mode:multiply}.story-copy{max-width:490px}.story-copy h2{margin:0 0 20px;font:500 clamp(34px,5vw,58px)/1.02 'Manrope';letter-spacing:-.06em}.story-copy>p:not(.kicker){color:#625a54;font-size:13px;line-height:1.9}.story-copy .glass-button{margin-top:10px}.shop-hero{padding:83px 0 54px}.shop-hero h1{font-size:clamp(48px,8vw,90px)}.shop-hero>p:last-child{margin:20px 0 0;color:var(--muted);font-size:13px}.catalog-note{display:flex;justify-content:space-between;gap:24px;padding:14px 0;border-top:1px solid var(--line);font-size:9px;letter-spacing:.15em;font-weight:700}.catalog-note span{max-width:490px;color:var(--muted);font-size:10px;line-height:1.6;letter-spacing:0;font-weight:400}.shop-catalog{padding-bottom:85px}.shop-products{padding-top:22px}.shop-products .product-visual{height:430px}.shop-end{padding:75px 0;background:#252222;color:#fff}.shop-end .kicker{color:#f08bb8}.shop-end h2{margin:0 0 28px}.shop-end .glass-button{color:#191817}.reveal{opacity:0;transform:translateY(30px);transition:opacity .72s ease,transform .72s cubic-bezier(.2,.8,.2,1)}.reveal.is-visible{opacity:1;transform:translateY(0)}.products .product-card:nth-child(2){transition-delay:.1s}.products .product-card:nth-child(3){transition-delay:.2s}
+@media(max-width:760px){:root{--header-height:70px}.wrap{width:90%}.top{padding:0 5%}.brand img{width:38px;height:38px}.brand span{font-size:9px;max-width:105px;line-height:1.3}.nav{gap:5px}.glass-button{min-height:37px;padding:0 12px;font-size:10px}.campaign-stage{min-height:calc(100svh - var(--header-height))}.campaign-image{max-height:calc(100svh - var(--header-height));}.collection-panel{padding:55px 0 70px;border-radius:17px 17px 0 0}.section-heading{display:block}.section-heading h1{font-size:44px}.section-note{margin-top:14px}.products{grid-template-columns:1fr 1fr;gap:18px 12px}.product-visual{height:270px}.product-meta h2{font-size:12px}.home-about-inner{grid-template-columns:1fr;gap:8px}.home-about-inner>p{margin:12px 0}.home-about-inner>.glass-button{justify-self:start}.about-hero{padding:80px 0 70px}.about-story{padding:50px 0}.story-grid{grid-template-columns:1fr;gap:28px}.story-art{min-height:290px;border-top-right-radius:120px}.story-copy h2{font-size:42px}.shop-hero{padding:62px 0 38px}.shop-hero h1{font-size:clamp(48px,12vw,72px)}.shop-products .product-visual{height:290px}.catalog-note{display:block}.catalog-note span{display:block;margin-top:8px}.foot{flex-wrap:wrap}.foot span{width:100%;order:3}}
+@media(max-width:430px){.brand span{display:none}.glass-button{padding:0 10px;font-size:9px}.campaign-stage{min-height:calc(100svh - var(--header-height))}.products,.shop-products{grid-template-columns:1fr}.product-visual,.shop-products .product-visual{height:355px}.scroll-cue{bottom:17px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.scroll-cue span{animation:none}.glass-button{transition:none}}
+
+/* Feedback solicitado: os dois botões do cabeçalho ficam translúcidos e combinam entre si. */
+.nav .glass-button,.nav .glass-button-dark{color:var(--ink);border-color:rgba(255,255,255,.72);background:linear-gradient(145deg,rgba(255,255,255,.24),rgba(255,255,255,.09));box-shadow:0 6px 18px rgba(53,43,38,.055),inset 0 1px 0 rgba(255,255,255,.8),inset 0 -1px 0 rgba(199,185,177,.12);backdrop-filter:blur(20px) saturate(1.65);-webkit-backdrop-filter:blur(20px) saturate(1.65)}
+.nav .glass-button:hover,.nav .glass-button-dark:hover{color:var(--ink);border-color:rgba(255,255,255,.96);background:linear-gradient(145deg,rgba(255,255,255,.47),rgba(255,255,255,.2));box-shadow:0 9px 22px rgba(53,43,38,.1),inset 0 1px 0 rgba(255,255,255,.95)}
+/* A vitrine fica presa à janela enquanto as peças atravessam a cena de baixo para cima. */
+.collection-scroll{height:calc(400svh - var(--header-height));position:relative;background:#f2e9e8}
+.collection-sticky{height:calc(100svh - var(--header-height));position:sticky;top:var(--header-height);overflow:hidden;display:grid;grid-template-rows:auto 1fr auto;padding:clamp(18px,4vh,42px) 6% 18px;background:linear-gradient(150deg,#f7f3ed 0%,#efe4e4 100%)}
+.collection-heading{z-index:5;display:flex;align-items:end;justify-content:space-between;gap:20px}.collection-heading h1{margin:0;font:500 clamp(30px,4.3vw,58px)/1 'Manrope',sans-serif;letter-spacing:-.065em}.collection-heading>span{display:inline-flex;align-items:center;gap:12px;padding:9px 13px;border:1px solid rgba(255,255,255,.75);border-radius:24px;background:rgba(255,255,255,.22);backdrop-filter:blur(14px);font-size:8px;font-weight:700;letter-spacing:.15em;color:#67525d}.collection-heading>span b{font-size:15px;font-weight:400}
+.rise-stage{position:relative;min-height:0}.rise-card{--rise-y:48vh;--rise-opacity:0;position:absolute;top:50%;left:50%;width:min(430px,52vw);margin:0;opacity:var(--rise-opacity);transform:translate(-50%,calc(-50% + var(--rise-y))) scale(var(--rise-scale,.96));transform-origin:center;will-change:transform,opacity;z-index:1}.rise-visual{height:min(53vh,460px);position:relative;display:grid;place-items:center;overflow:hidden;background:#eadfd4;text-decoration:none}.rise-visual.visual-rose{background:#e4d8d2}.rise-visual.visual-stone{background:#d8d2c7}.rise-visual .garment{height:72%;width:48%}.rise-meta{display:flex;align-items:center;justify-content:space-between;padding:12px 3px}.rise-meta h2{margin:0 0 4px;font:600 14px 'Manrope',sans-serif}.rise-meta p{margin:0;color:var(--muted);font-size:10px}.rise-meta>a{font-size:19px}.rise-track{position:absolute;z-index:6;left:6%;right:6%;bottom:16px;height:2px;background:#d8caca}.rise-track span{display:block;width:0;height:100%;background:var(--pink);transform-origin:left}
+@media(max-width:760px){.collection-scroll{height:calc(400svh - var(--header-height))}.collection-sticky{padding:22px 5% 22px}.collection-heading{align-items:start;flex-direction:column;gap:10px}.collection-heading h1{font-size:38px}.rise-card{width:min(390px,78vw)}.rise-visual{height:min(52vh,390px)}.rise-meta h2{font-size:13px}}
+@media(max-width:430px){.collection-heading h1{font-size:34px}.collection-heading>span{font-size:7px}.rise-card{width:86vw}.rise-visual{height:48vh}.rise-meta h2{font-size:12px}}
+@media(prefers-reduced-motion:reduce){.rise-card{opacity:1;transform:translate(-50%,-50%);will-change:auto}.rise-track span{width:100%!important}}
+@media(prefers-reduced-motion:reduce){.collection-scroll{height:auto}.collection-sticky{height:auto;min-height:0;position:relative;top:auto;overflow:visible;display:block;padding-top:40px;padding-bottom:40px}.rise-stage{display:grid;gap:28px;margin-top:24px}.rise-card{position:relative;top:auto;left:auto;width:min(100%,520px);opacity:1!important;transform:none!important;margin:0 auto}.rise-visual{height:360px}.rise-track{display:none}}
+/* A vitrine deixa de parecer uma grade: cada look vira uma cena grande que atravessa o quadro fixo. */
+.rise-card{width:min(94vw,1180px);max-width:none}
+.rise-visual{height:min(63svh,650px);min-height:360px}
+.rise-visual .garment{width:min(32vw,360px);height:78%}
+.rise-meta{position:absolute;left:50%;bottom:14px;width:max-content;max-width:calc(100% - 28px);padding:12px 18px;border:1px solid rgba(255,255,255,.78);border-radius:30px;background:rgba(255,255,255,.48);backdrop-filter:blur(17px) saturate(1.3);-webkit-backdrop-filter:blur(17px) saturate(1.3);box-shadow:0 8px 24px rgba(40,30,32,.09);transform:translateX(-50%)}
+.rise-meta h2{font-size:15px}.rise-meta p{font-size:10px}
+@media(max-width:760px){.rise-card{width:94vw}.rise-visual{height:min(62svh,560px);min-height:330px}.rise-visual .garment{width:min(58vw,290px);height:77%}.rise-meta{padding:10px 15px}}
+@media(prefers-reduced-motion:reduce){.rise-card{width:min(100%,520px)}.rise-visual{height:360px}.rise-meta{position:static;width:100%;max-width:none;transform:none;margin-top:8px}}
+/* A imagem permanece ancorada; a faixa de looks sobe por cima conforme o visitante rola. */
+.showcase-scroll{height:calc(250svh - var(--header-height));position:relative;background:#d9b2c2}
+.showcase-sticky{height:calc(100svh - var(--header-height));position:sticky;top:var(--header-height);overflow:hidden;isolation:isolate;background:#d9b2c2}
+.showcase-sticky .campaign-image{position:absolute;z-index:0;left:0;top:50%;display:block;width:100%;height:auto;max-height:100%;object-fit:contain;transform:translateY(-50%);will-change:auto}
+.showcase-title{position:absolute;z-index:2;top:clamp(18px,4vh,36px);left:6%;color:#2b1d24;opacity:var(--showcase-copy-opacity,0);transform:translateY(12px);transition:opacity .2s,transform .2s}
+.showcase-title p{margin:0 0 7px;font-size:9px;font-weight:700;letter-spacing:.2em}.showcase-title h1{margin:0;font:600 clamp(30px,4vw,52px)/1 'Manrope',sans-serif;letter-spacing:-.06em}
+.showcase-clothes{position:absolute;z-index:1;top:50%;left:50%;width:min(96vw,1180px);height:min(70svh,700px);display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:clamp(8px,2vw,26px);opacity:var(--showcase-clothes-opacity,0);transform:translate(-50%,calc(-50% + var(--showcase-y,55svh)));will-change:transform,opacity}
+.showcase-look{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(12px,3vh,26px)}
+.showcase-look .garment{width:66%;height:72%;filter:drop-shadow(0 18px 15px rgba(35,20,29,.2))}
+.showcase-label{display:flex;flex-direction:column;align-items:center;gap:5px;padding:10px 13px;border:1px solid rgba(255,255,255,.8);border-radius:28px;background:rgba(255,255,255,.5);backdrop-filter:blur(15px) saturate(1.2);-webkit-backdrop-filter:blur(15px) saturate(1.2);color:#281d23;text-align:center;box-shadow:0 6px 20px rgba(49,25,39,.1)}
+.showcase-label small{font-size:7px;letter-spacing:.16em}.showcase-label strong{font:600 11px 'Manrope',sans-serif}
+.showcase-scroll-cue{transition:opacity .2s}.showcase-progress{position:absolute;z-index:3;left:6%;right:6%;bottom:15px;height:2px;background:rgba(65,29,47,.18)}.showcase-progress span{display:block;width:0;height:100%;background:#8e1c52}
+@media(max-width:760px){.showcase-scroll{height:calc(250svh - var(--header-height))}.showcase-sticky{height:calc(100svh - var(--header-height))}.showcase-clothes{width:97vw;height:65svh;gap:4px}.showcase-look .garment{width:78%;height:70%}.showcase-label{padding:8px 7px}.showcase-label small{font-size:6px}.showcase-label strong{font-size:9px}.showcase-title{left:5%}}
+@media(max-width:430px){.showcase-clothes{width:99vw;height:59svh}.showcase-look{gap:15px}.showcase-look .garment{width:86%;height:67%}.showcase-label{max-width:100%;padding:7px 5px}.showcase-label strong{font-size:8px}}
+@media(prefers-reduced-motion:reduce){.showcase-scroll{height:auto}.showcase-sticky{height:auto;min-height:calc(100svh - var(--header-height));position:relative;top:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;padding:80px 3% 50px}.showcase-sticky .campaign-image{position:relative;top:auto;left:auto;transform:none;width:100%;height:auto}.showcase-title{position:relative;top:auto;left:auto;opacity:1;transform:none;align-self:flex-start}.showcase-clothes{position:relative;top:auto;left:auto;width:100%;height:auto;opacity:1;transform:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.showcase-look{height:45vh}.showcase-look .garment{width:75%;height:65%}.showcase-scroll-cue,.showcase-progress{display:none}}
+/* Imagens reais das peças enviadas em PDF. */
+.showcase-product{display:block;width:100%;height:78%;object-fit:contain;filter:drop-shadow(0 18px 15px rgba(35,20,29,.18))}
+.product-visual-photo{background:#fff!important}
+.product-photo{display:block;width:100%;height:100%;object-fit:contain}
+@media(max-width:760px){.showcase-product{height:74%}}
+/* Fundo neutro com mistura suave para as imagens se integrarem sem o retângulo branco. */
+.showcase-product,.product-photo{mix-blend-mode:multiply}
+.product-visual-photo{background:#e8e5e0!important}
+.showcase-product{filter:drop-shadow(0 20px 18px rgba(25,20,22,.28))}
+.product-photo{filter:drop-shadow(0 14px 12px rgba(25,20,22,.2))}
+/* Botão de Sobre nós translúcido com sombra visível. */
+.home-about .glass-button-dark{color:var(--ink);border-color:rgba(255,255,255,.72);background:rgba(255,255,255,.22);box-shadow:0 10px 25px rgba(25,24,23,.23),inset 0 1px 0 rgba(255,255,255,.72);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4)}
+.home-about .glass-button-dark:hover{background:rgba(255,255,255,.42);box-shadow:0 13px 29px rgba(25,24,23,.28),inset 0 1px 0 rgba(255,255,255,.9)}
+/* Cartões verticais das peças na seção de apresentação da marca. */
+.home-about-products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding-top:44px;padding-bottom:12px}
+.home-product-card{min-height:440px;display:flex;flex-direction:column;align-items:center;justify-content:space-between;overflow:hidden;padding:14px 14px 20px;border:1px solid rgba(255,255,255,.92);border-radius:22px;background:#fff;box-shadow:0 12px 32px rgba(35,27,26,.2),0 3px 9px rgba(35,27,26,.1),inset 0 1px 0 #fff}
+.home-product-card img{display:block;width:100%;height:370px;object-fit:contain;mix-blend-mode:multiply;filter:drop-shadow(0 10px 12px rgba(35,27,26,.12))}
+.home-product-card span{padding-top:10px;font:600 13px 'Manrope',sans-serif;letter-spacing:.02em}
+@media(max-width:760px){.home-about-products{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;padding-top:28px}.home-product-card{min-height:340px;padding:10px 10px 16px;border-radius:18px}.home-product-card img{height:280px}}
+@media(max-width:430px){.home-about-products{grid-template-columns:1fr;width:min(88%,360px)}.home-product-card{min-height:410px}.home-product-card img{height:340px}}
+/* Paleta oficial da marca: magenta, roxo e branco. */
+:root{--paper:#FFFFFF;--ink:#25112B;--muted:#6E5A72;--pink:#A20067;--line:rgba(97,0,125,.18);--glass:rgba(255,255,255,.55)}
+body{background:#FFFFFF;color:#25112B}
+.top{background:rgba(255,255,255,.88);border-bottom-color:rgba(97,0,125,.12)}
+.glass-button-dark,.glass-button-dark:hover{background:linear-gradient(135deg,#A20067,#61007D);color:#FFFFFF}
+.glass-button:focus-visible{outline-color:rgba(162,0,103,.42)}
+.campaign-stage,.showcase-scroll,.showcase-sticky{background:#61007D}
+.scroll-cue{color:#61007D}
+.collection-scroll{background:#FFFFFF}
+.collection-sticky{background:linear-gradient(150deg,#FFFFFF 0%,rgba(162,0,103,.06) 100%)}
+.collection-panel{background:#FFFFFF}
+.home-about,.about-story{background:linear-gradient(135deg,#A20067 0%,#61007D 100%);color:#FFFFFF}
+.home-about .kicker,.home-about h2 em,.about-story .kicker{color:#FFFFFF}
+.home-about-inner>p,.story-copy>p:not(.kicker){color:rgba(255,255,255,.88)}
+.home-about .glass-button-dark{color:#FFFFFF;border-color:rgba(255,255,255,.78);background:rgba(255,255,255,.14);box-shadow:0 10px 26px rgba(35,0,45,.28),inset 0 1px 0 rgba(255,255,255,.55)}
+.home-about .glass-button-dark:hover{color:#FFFFFF;background:rgba(255,255,255,.24)}
+.shop-end{background:linear-gradient(135deg,#A20067,#61007D)}
+.shop-end .glass-button{color:#61007D}
+.product-visual-photo,.home-product-card{background:#FFFFFF!important}
+.home-product-card{color:#25112B;border-color:rgba(97,0,125,.12);box-shadow:0 12px 32px rgba(97,0,125,.18),0 3px 9px rgba(97,0,125,.12),inset 0 1px 0 #FFFFFF}
+.showcase-progress{background:rgba(255,255,255,.35)}
+.showcase-progress span{background:#A20067}
+/* Retorno ao rosa original da abertura e apresentação das peças sem o fundo branco das fotos. */
+.campaign-stage,.showcase-scroll,.showcase-sticky{background:#D9B2C2}
+.showcase-product,.product-photo,.home-product-card img{mix-blend-mode:normal}
+.showcase-product{filter:drop-shadow(0 20px 18px rgba(58,13,47,.3))}
+.product-visual-photo{background:#F2E8F0!important}
+.product-photo{filter:drop-shadow(0 13px 12px rgba(58,13,47,.2))}
+.home-product-card{background:linear-gradient(180deg,#F2E8F0 0%,#FFFFFF 78%)!important}
+.home-product-card img{filter:drop-shadow(0 10px 12px rgba(58,13,47,.16))}
+/* Ajustes pedidos na vitrine e na chamada Sobre nós. */
+.showcase-title{display:none}
+.home-about-inner{grid-template-columns:.9fr 1.1fr;gap:42px}
+.home-about-cta{display:flex;justify-content:center;margin:28px auto 0}
+.home-about-cta .glass-button{min-width:190px;min-height:56px;padding:0 28px;border:1px solid rgba(255,255,255,.94);border-radius:32px;color:#61007D;background:#FFFFFF;box-shadow:0 12px 30px rgba(40,0,55,.3),0 3px 9px rgba(40,0,55,.18),inset 0 1px 0 #FFFFFF;font-size:13px;font-weight:700}
+.home-about-cta .glass-button:hover{color:#A20067;background:#FFFFFF;transform:translateY(-3px);box-shadow:0 16px 34px rgba(40,0,55,.36),0 4px 12px rgba(40,0,55,.2)}
+.home-about-products{padding-top:96px}
+@media(max-width:760px){.home-about-inner{grid-template-columns:1fr;gap:8px}.home-about-cta{margin-top:24px}.home-about-products{padding-top:72px}}
+@media(max-width:430px){.home-about-products{padding-top:56px}}
+/* Zoom suave apenas nas fotos dos cartões da seção de apresentação. */
+.home-product-card img{transition:transform .38s cubic-bezier(.2,.8,.2,1)}
+@media(hover:hover){.home-product-card:hover img{transform:scale(1.1)}}
+@media(prefers-reduced-motion:reduce){.home-product-card img{transition:none}.home-product-card:hover img{transform:none}}
+.home-about-cta .glass-button{font-size:17px;min-width:220px;min-height:60px}
+/* A exclamação da arte entra como acento visual no banner. */
+.campaign-exclamation{position:absolute;z-index:1;top:50%;right:9%;display:block;width:clamp(86px,11vw,150px);height:auto;transform:translateY(-50%) rotate(9deg);filter:drop-shadow(5px 6px 0 rgba(97,0,125,.82));pointer-events:none}
+@media(max-width:760px){.campaign-exclamation{right:5%;width:clamp(76px,17vw,112px)}}
+/* Fotografia da seção "Quem somos?" sem alterar o layout da arte da marca. */
+.story-photo img{display:block;width:100%;height:100%;object-fit:cover;mix-blend-mode:normal}
+/* Segunda seção com contraste próprio e separação suave da primeira. */
+.about-story-secondary{position:relative;z-index:1;background:linear-gradient(135deg,#F8E8F1 0%,#FFFFFF 100%);color:#25112B;box-shadow:0 -18px 38px rgba(55,0,65,.2);border-top:1px solid rgba(255,255,255,.85)}
+.about-story-secondary .story-copy .kicker{color:#A20067}
+.about-story-secondary .story-copy h2{color:#25112B}
+.about-story-secondary .story-copy>p:not(.kicker){color:#6E5A72}
+/* A seção "Feita para vestir" agora vem depois e recebe uma transição branca suave. */
+.about-story:not(.about-story-secondary){position:relative;z-index:1;border-top:1px solid rgba(255,255,255,.72);box-shadow:0 -16px 34px rgba(255,255,255,.52)}
+/* Fundo rosa para destacar a seção Quem somos sem perder contraste no texto. */
+.about-story-secondary{background:linear-gradient(135deg,#D9B2C2 0%,#F0CBDD 100%);color:#25112B}
+.about-story-secondary .story-copy .kicker{color:#A20067}
+.about-story-secondary .story-copy h2{color:#25112B}
+.about-story-secondary .story-copy>p:not(.kicker){color:#4D3B52}
+/* Quem somos: rosa de marca mais forte com painel branco destacando o texto. */
+.about-story-secondary{background:linear-gradient(135deg,#C22E70 0%,#A20067 100%);color:#25112B}
+.story-copy-highlight{padding:clamp(24px,3.5vw,42px);border:1px solid rgba(255,255,255,.96);border-radius:22px;background:#FFFFFF;box-shadow:0 16px 36px rgba(46,0,52,.24),0 4px 12px rgba(46,0,52,.12)}
+.about-story-secondary .story-copy-highlight .kicker{color:#A20067}
+.about-story-secondary .story-copy-highlight h2{color:#25112B}
+.about-story-secondary .story-copy-highlight>p:not(.kicker){color:#55445A}
+.foot .instagram-link{color:#A20067;font-weight:700;letter-spacing:.025em;white-space:nowrap}
+.foot .instagram-link:hover{text-decoration:underline;text-underline-offset:4px}
+/* Título de Quem somos fora do painel; o texto fica em um cartão branco próprio. */
+.about-story-secondary .story-copy-about>.kicker,.about-story-secondary .story-copy-about>h2{color:#FFFFFF}
+.story-copy p:not(.kicker){text-align:justify}
+.story-copy-highlight{text-align:justify}
+@media(max-width:760px){.story-copy-highlight{padding:24px 22px}}
+/* Chamada de contato ao fim do catálogo. */
+.shop-contact-callout{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:clamp(28px,6vw,84px)}
+.shop-contact-callout h2{max-width:650px}
+.shop-contact-action{display:flex;flex-direction:column;align-items:flex-start;gap:16px;padding:32px;border:1px solid rgba(255,255,255,.72);border-radius:24px;background:rgba(255,255,255,.12);box-shadow:0 12px 30px rgba(35,0,48,.2),inset 0 1px 0 rgba(255,255,255,.2)}
+.shop-contact-action p{margin:0;color:rgba(255,255,255,.86);font-size:14px}
+.shop-contact-action .glass-button,.contact-instagram{min-height:54px;padding:0 24px;border-color:#fff;background:#fff;color:#61007D;font-size:13px;font-weight:700;box-shadow:0 10px 24px rgba(35,0,48,.24)}
+.contact-hero{min-height:calc(100svh - var(--header-height));display:flex;align-items:center;padding:80px 0;background:linear-gradient(135deg,#A20067 0%,#61007D 100%);color:#fff}
+.contact-layout{display:grid;grid-template-columns:1fr .8fr;align-items:center;gap:10%}
+.contact-copy{max-width:620px}
+.contact-copy .kicker{color:#fff}
+.contact-copy h1{margin:0;font:500 clamp(54px,8vw,96px)/.98 'Manrope',sans-serif;letter-spacing:-.07em}
+.contact-copy h1 em{color:#F0CBDD}
+.contact-copy>p:not(.kicker){max-width:460px;margin:24px 0 28px;color:rgba(255,255,255,.88);font-size:15px;line-height:1.8}
+.contact-handle{padding:clamp(28px,5vw,54px);border:1px solid rgba(255,255,255,.8);border-radius:28px;background:rgba(255,255,255,.12);backdrop-filter:blur(18px);box-shadow:0 18px 40px rgba(35,0,48,.22),inset 0 1px 0 rgba(255,255,255,.3)}
+.contact-handle span{display:block;margin-bottom:16px;color:#F0CBDD;font-size:10px;font-weight:700;letter-spacing:.2em}
+.contact-handle strong{font:600 clamp(20px,3vw,32px) 'Manrope',sans-serif;overflow-wrap:anywhere}
+.contact-handle p{margin:14px 0 0;color:rgba(255,255,255,.86);font-size:13px}
+@media(max-width:760px){.shop-contact-callout,.contact-layout{grid-template-columns:1fr;gap:26px}.shop-contact-action{padding:24px}.contact-hero{padding:60px 0}.contact-layout{gap:40px}}
+.shop-contact-home .shop-home-button{display:inline-flex;margin-top:28px;min-height:54px;padding:0 23px;border-color:#fff;border-radius:28px;background:#fff;color:#61007D;font-size:12px;font-weight:700;box-shadow:0 10px 24px rgba(35,0,48,.24)}
+.shop-contact-home .shop-home-button:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(35,0,48,.3)}
+.shop-contact-side h3{margin:0 0 20px;color:#fff;font:600 clamp(20px,2.5vw,29px)/1.15 'Manrope',sans-serif;letter-spacing:-.035em}
+.shop-contact-action{padding:24px 30px}
+@media(max-width:760px){.shop-contact-side h3{font-size:23px}}
