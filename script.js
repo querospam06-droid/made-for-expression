@@ -28,9 +28,12 @@
   const updateShowcase = () => {
     const scrollSpan = Math.max(1, zone.offsetHeight - sticky.offsetHeight);
     const progress = clamp(-zone.getBoundingClientRect().top / scrollSpan);
-    const fadeIn = clamp((progress - 0.04) * 6);
-    const fadeOut = clamp((1.02 - progress) * 5);
-    clothes.style.setProperty('--showcase-y', `${(0.55 - progress * 1.1) * 100}svh`);
+    const coverProgress = clamp(progress / 0.27);
+    const clothesProgress = clamp((progress - 0.1) / 0.9);
+    const fadeIn = clamp((progress - 0.1) * 8);
+    const fadeOut = clamp((1 - progress) * 20);
+    sticky.style.setProperty('--showcase-cover-y', `${(1 - coverProgress) * 100}%`);
+    clothes.style.setProperty('--showcase-y', `${(0.36 - clothesProgress) * 100}svh`);
     clothes.style.setProperty('--showcase-clothes-opacity', (fadeIn * fadeOut).toFixed(3));
     if (title) title.style.setProperty('--showcase-copy-opacity', clamp(progress * 5).toFixed(3));
     if (cue) cue.style.opacity = String(clamp(1 - progress * 5));
@@ -47,3 +50,4 @@
   window.addEventListener('resize', requestUpdate, { passive: true });
   updateShowcase();
 })();
+
