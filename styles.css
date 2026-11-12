@@ -250,3 +250,6 @@ body{background:#FFFFFF;color:#25112B}
   .shop-products .product-visual{height:180px}
 }
 
+
+/* Dá mais espaço de rolagem no celular para acompanhar a subida das peças sem pular a cena. */
+@media(max-width:600px) and (prefers-reduced-motion:no-preference){.showcase-scroll{height:calc(320svh - var(--header-height))}}
