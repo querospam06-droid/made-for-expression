@@ -179,3 +179,74 @@ body{background:#FFFFFF;color:#25112B}
 .nav .glass-button b{display:none}
 @media(prefers-reduced-motion:reduce){.showcase-sticky::before{display:none}}
 
+/* Layout mobile: cabeçalho em duas linhas, peças maiores e páginas mais fáceis de percorrer. */
+@media(max-width:600px){
+  :root{--header-height:88px}
+  .top{height:var(--header-height);padding:8px 4% 9px;display:flex;flex-direction:column;justify-content:center;gap:5px}
+  .brand{gap:8px;justify-content:center}
+  .brand img{width:30px;height:30px}
+  .brand span{display:inline;max-width:none;font-size:9px;letter-spacing:.1em}
+  .nav{width:100%;justify-content:center;gap:6px}
+  .nav .glass-button{flex:1;min-width:0;min-height:37px;padding:0 6px;font-size:9px;white-space:nowrap}
+  .showcase-sticky{height:calc(100svh - var(--header-height));top:var(--header-height)}
+  .showcase-sticky .campaign-image{object-position:center 48%}
+  .campaign-exclamation{right:7%;top:36%;width:clamp(54px,15vw,78px)}
+  .showcase-clothes{width:min(82vw,370px);height:min(70svh,610px);grid-template-columns:1fr;gap:0}
+  .showcase-look{height:33.333%;min-height:0;flex-direction:row;justify-content:center;gap:8px}
+  .showcase-look .showcase-product{width:52%;height:88%}
+  .showcase-label{width:42%;max-width:42%;padding:9px 8px}
+  .showcase-label strong{font-size:10px}
+  .showcase-label small{font-size:6px}
+  .showcase-scroll-cue{bottom:12px;padding:8px 12px;font-size:7px}
+  .home-about{padding:44px 0 52px}
+  .home-about-inner{gap:6px}
+  .home-about h2{font-size:clamp(42px,12vw,56px)}
+  .home-about-inner>p{font-size:13px;line-height:1.7}
+  .home-about-cta{margin-top:18px}
+  .home-about-products{width:90%;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding-top:42px}
+  .home-product-card{min-height:270px;padding:9px 8px 13px;border-radius:16px}
+  .home-product-card img{height:215px}
+  .home-product-card span{font-size:11px;text-align:center}
+  .about-hero{padding:62px 0 48px}
+  .about-hero h1{font-size:clamp(42px,11.5vw,62px);line-height:1.03}
+  .about-hero>p:last-child{font-size:14px}
+  .about-story{padding:40px 0}
+  .story-grid{gap:24px}
+  .story-art{min-height:240px}
+  .story-copy h2{font-size:38px}
+  .story-copy-highlight{padding:20px 18px;border-radius:18px}
+  .story-copy-highlight p{font-size:13px;line-height:1.75}
+  .shop-hero{padding:52px 0 32px}
+  .shop-hero h1{font-size:clamp(42px,11.5vw,60px)}
+  .shop-catalog{padding-bottom:56px}
+  .shop-products{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 12px;padding-top:18px}
+  .shop-products .product-visual{height:clamp(180px,54vw,245px);border-radius:16px}
+  .product-meta{gap:6px;padding:10px 1px}
+  .product-meta h2{font-size:11px;line-height:1.3}
+  .product-meta p{font-size:9px;line-height:1.4}
+  .product-meta>a,.product-index{font-size:14px}
+  .shop-end{padding:52px 0}
+  .shop-contact-callout{gap:30px}
+  .shop-end h2{font-size:clamp(38px,10vw,50px)}
+  .shop-contact-action{padding:20px;border-radius:20px}
+  .contact-hero{min-height:calc(100svh - var(--header-height));padding:42px 0}
+  .contact-layout{gap:26px}
+  .contact-copy h1{font-size:clamp(52px,14vw,68px)}
+  .contact-copy>p:not(.kicker){font-size:14px;line-height:1.7}
+  .contact-handle{padding:22px 20px;border-radius:22px}
+  .contact-method a{font-size:clamp(16px,5vw,20px)}
+  .foot{justify-content:center;gap:12px;padding:18px 0 22px;text-align:center}
+  .foot .brand{width:100%;justify-content:center}
+  .foot>span{width:100%;order:3}
+}
+@media(max-width:360px){
+  .top{padding-left:3%;padding-right:3%}
+  .nav{gap:4px}
+  .nav .glass-button{padding:0 4px;font-size:8px}
+  .showcase-clothes{width:88vw}
+  .showcase-label strong{font-size:9px}
+  .home-product-card{min-height:238px}
+  .home-product-card img{height:185px}
+  .shop-products .product-visual{height:180px}
+}
+
